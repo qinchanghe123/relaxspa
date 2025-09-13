@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>King Foot Massage</title>
+    <title>Relax Spa</title>
     <meta
       name="description"
-      content="Experience ultimate relaxation at King Foot Massage, known for exceptional massages tailored to your needs. Clients love our serene environment, skilled therapists, and personalized care. Unwind and recharge with us."
+      content="Experience ultimate relaxation at Relax Spa, known for exceptional massages tailored to your needs. Clients love our serene environment, skilled therapists, and personalized care. Unwind and recharge with us."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -156,169 +156,6 @@
         font-style: italic;
       }
 
-      /* Gallery Section */
-      #gallery {
-        background: linear-gradient(135deg, #f0f4ff 0%, #e1ecff 100%);
-        padding: 60px 20px;
-      }
-
-      .gallery-container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        margin: 40px 0;
-      }
-
-      .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
-        cursor: pointer;
-        background: white;
-        aspect-ratio: 4/3;
-      }
-
-      .gallery-item:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      }
-
-      .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      .gallery-item:hover img {
-        transform: scale(1.05);
-      }
-
-      .gallery-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, rgba(107, 115, 255, 0.8), rgba(118, 75, 162, 0.8));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .gallery-item:hover .gallery-overlay {
-        opacity: 1;
-      }
-
-      .gallery-overlay-text {
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .gallery-overlay h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        color: white;
-      }
-
-      .gallery-overlay p {
-        font-size: 1rem;
-        opacity: 0.9;
-      }
-
-      /* Modal for full-size image viewing */
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 2000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.9);
-        animation: fadeIn 0.3s ease;
-      }
-
-      .modal.active {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-
-      .modal-content {
-        position: relative;
-        max-width: 90%;
-        max-height: 90%;
-        margin: auto;
-      }
-
-      .modal-content img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .close-modal {
-        position: absolute;
-        top: -40px;
-        right: 0;
-        color: white;
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer;
-        background: none;
-        border: none;
-        transition: color 0.3s ease;
-      }
-
-      .close-modal:hover {
-        color: #6B73FF;
-      }
-
-      .gallery-nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(255,255,255,0.2);
-        backdrop-filter: blur(10px);
-        color: white;
-        border: none;
-        font-size: 24px;
-        padding: 15px 20px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-      }
-
-      .gallery-nav:hover {
-        background: rgba(255,255,255,0.3);
-        transform: translateY(-50%) scale(1.1);
-      }
-
-      .prev-btn {
-        left: -60px;
-      }
-
-      .next-btn {
-        right: -60px;
-      }
-
       /* Call and Book Online Section */
       .contact-buttons {
         display: flex;
@@ -369,6 +206,166 @@
       .contact-card p {
         color: #666;
         line-height: 1.5;
+      }
+
+      /* Gallery Section Styles */
+      #gallery {
+        background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 100%);
+        padding: 80px 20px;
+      }
+
+      .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+      }
+
+      .photo-item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        background: white;
+        aspect-ratio: 4/3;
+      }
+
+      .photo-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      }
+
+      .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .photo-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .photo-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .photo-item:hover .photo-overlay {
+        transform: translateY(0);
+      }
+
+      .photo-overlay h4 {
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+      }
+
+      .photo-overlay p {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      /* Lightbox Styles */
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox.active {
+        display: flex;
+      }
+
+      .lightbox-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      }
+
+      .lightbox img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: rgba(0,0,0,0.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+      }
+
+      .lightbox-close:hover {
+        background: rgba(0,0,0,0.8);
+      }
+
+      .lightbox-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        border-radius: 5px;
+      }
+
+      .lightbox-nav:hover {
+        background: rgba(0,0,0,0.8);
+      }
+
+      .lightbox-prev {
+        left: 20px;
+      }
+
+      .lightbox-next {
+        right: 20px;
+      }
+
+      .loading-message {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+        margin: 40px 0;
       }
 
       /* Booking Form */
@@ -675,18 +672,27 @@
           max-width: 400px;
         }
 
-        .gallery-grid {
-          grid-template-columns: 1fr;
-          gap: 20px;
+        .photo-grid {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 15px;
         }
 
-        .gallery-nav {
-          display: none;
-        }
-
-        .modal-content {
+        .lightbox-content {
           max-width: 95%;
-          max-height: 85%;
+          max-height: 95%;
+        }
+
+        .lightbox-nav {
+          padding: 10px;
+          font-size: 20px;
+        }
+
+        .lightbox-prev {
+          left: 10px;
+        }
+
+        .lightbox-next {
+          right: 10px;
         }
       }
 
@@ -716,10 +722,9 @@
           font-size: 1.6rem;
         }
 
-        .gallery-grid {
+        .photo-grid {
           grid-template-columns: 1fr;
           gap: 15px;
-          margin: 20px 0;
         }
       }
     </style>
@@ -739,7 +744,7 @@
     <!-- Home Section -->
     <section id="home" class="home">
       <div class="home-content">
-        <h1>King Foot Massage</h1>
+        <h1>Relax Spa</h1>
         <p class="spa-tagline">Your sanctuary of tranquility and rejuvenation</p>
       </div>
 
@@ -748,7 +753,7 @@
         <!-- Call Card -->
         <div class="contact-card">
           <h3>📞 Call for Appointment</h3>
-          <a href="tel:+1-469-639-0889" class="phone-number">469-639-0889</a>
+          <a href="tel:+1-312-478-2904" class="phone-number">312-478-2904</a>
           <p>Speak directly with our friendly staff to schedule your perfect massage experience within 30 minutes.</p>
         </div>
 
@@ -805,7 +810,7 @@
             </div>
             <div class="form-group">
               <label for="time">Preferred Time *</label>
-              <input type="time" id="time" name="time" min="09:00" max="22:00" required>
+              <input type="time" id="time" name="time" min="09:00" max="01:00" required>
             </div>
           </div>
 
@@ -813,28 +818,17 @@
             <label for="service">Preferred Service</label>
             <select id="service" name="service">
               <option value="">Select a Service</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 30min">Full Body Massage (30min) - $50 Cash/$55 Card</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 60min">Full Body Massage (60min) - $70 Cash/$75 Card</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 90min">Full Body Massage (90min) - $100 Cash/$105 Card</option>
-              <option value="Combo Special (Body+Foot) - 60min">Combo Special (Body+Foot) 60min - $70 Cash/$75 Card</option>
-              <option value="Combo Special (Body+Foot) - 90min">Combo Special (Body+Foot) 90min - $100 Cash/$105 Card</option>
-              <option value="Foot Massage (cloth on) - 30min">Foot Massage (30min) - $35 Cash/$40 Card</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 60min">Foot Massage (Head+Arm+Foot+Back) 60min - $60 Cash/$65 Card</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 90min">Foot Massage (Head+Arm+Foot+Back) 90min - $90 Cash/$95 Card</option>
-              <option value="Chair Massage - 15min">Chair Massage (15min) - $20</option>
-              <option value="Chair Massage - 20min">Chair Massage (20min) - $30</option>
-              <option value="Chair Massage - 30min">Chair Massage (30min) - $40</option>
+              <option value="Hair Care & Massage - 45min">Hair Care & Massage (45min) - $65</option>
+              <option value="Hair Care & Massage - 60min">Hair Care & Massage (60min) - $80</option>
+              <option value="Premium Hair Care & Massage - 60min">Premium Hair Care & Massage (60min) - $100</option>
+              <option value="Aromatherapy Back Massage - 30min">Aromatherapy Back Massage (30min) - $60</option>
+              <option value="Aromatherapy Whole Body Massage - 60min">Aromatherapy Whole Body Massage (60min) - $90</option>
+              <option value="Hot Stone Massage - 60min">Hot Stone Massage (60min) - $128</option>
+              <option value="Luxury Spa Package - 80min">Luxury Spa Package (80min) - $150</option>
+              <option value="Complete Care Package - 70min">Complete Care Package (70min) - $128</option>
+              <option value="Head Spa Special - 60min">Head Spa Special (60min) - $125</option>
+              <option value="Ultimate Relaxation Package - 90min">Ultimate Relaxation Package (90min) - $160</option>
             </select>
-          </div>
-
-          <div class="form-group">
-            <label for="addons">Add-ons (Optional)</label>
-            <select id="addons" name="addons" multiple>
-              <option value="Hot Stone (+$10)">Hot Stone (+$10)</option>
-              <option value="Essential Oil (+$10)">Essential Oil (+$10)</option>
-              <option value="CBD Oil/Cream (+$10)">CBD Oil/Cream (+$10)</option>
-            </select>
-            <small style="color: #666;">Hold Ctrl (PC) or Cmd (Mac) to select multiple options</small>
           </div>
 
           <div class="form-group">
@@ -852,46 +846,238 @@
 
     <!-- Services Section -->
     <section id="services">
-      <h2>Our Massage Services</h2>
+      <h2>Our Spa Services</h2>
       <h4>Hover or tap for detailed pricing information</h4>
       <div class="services">
         <div class="service-box">
-          <h3>Full Body Massage</h3>
+          <h3>Hair Care & Head Massage</h3>
           <p>
-            Choose between Swedish relaxation or Deep Tissue therapy massage to target your specific needs and preferences.
+            Professional hair washing with relaxing head, neck, shoulder and arm massage for complete relaxation.
           </p>
           <div class="price-wrapper">
-            <h4>30 min: $50 Cash / $55 Card</h4>
-            <h4>60 min: $70 Cash / $75 Card</h4>
-            <h4>90 min: $100 Cash / $105 Card</h4>
+            <h4>45 min: $65 (Wash hair + head & neck & shoulder & arm massage)</h4>
+            <h4>60 min: $80 (Wash hair & neck & shoulder & arm massage)</h4>
+            <h4>60 min Premium: $100 (Wash hair & massage + top brand shampoo set & facial cleansing)</h4>
           </div>
         </div>
 
         <div class="service-box">
-          <h3>Combo Special (Body + Foot)</h3>
+          <h3>Aromatherapy Massage</h3>
           <p>
-            Get the best of both worlds with our combination massage that includes both body and foot massage for complete relaxation.
+            Therapeutic aromatherapy massage targeting specific areas or full body treatment with essential oils.
           </p>
           <div class="price-wrapper">
-            <h4>60 min: $70 Cash / $75 Card</h4>
-            <h4>90 min: $100 Cash / $105 Card</h4>
+            <h4>30 min: $60 (Back & neck & shoulder & arm massage)</h4>
+            <h4>60 min: $90 (Whole body massage)</h4>
           </div>
         </div>
 
         <div class="service-box">
-          <h3>Foot Massage</h3>
+          <h3>Hot Stone Therapy</h3>
           <p>
-            Our signature foot massage with cloth on, or comprehensive treatment including Head, Arm, Foot and Back massage.
+            Luxurious hot stone massage combined with whole body massage for deep muscle relaxation and stress relief.
           </p>
           <div class="price-wrapper">
-            <h4>30 min (cloth on): $35 Cash / $40 Card</h4>
-            <h4>60 min (Head+Arm+Foot+Back): $60 Cash / $65 Card</h4>
-            <h4>90 min (Head+Arm+Foot+Back): $90 Cash / $95 Card</h4>
+            <h4>60 min: $128 (Whole body massage + hot stone)</h4>
           </div>
         </div>
 
         <div class="service-box">
-          <h3>Chair Massage</h3>
+          <h3>Luxury Spa Package</h3>
           <p>
-            Quick and convenient chair massage perfect for targeting neck, shoulders, and back tension during your busy day.
+            Premium spa experience including hair care, essential oil massage, hot stone therapy and hair mask treatment.
           </p>
+          <div class="price-wrapper">
+            <h4>80 min: $150 (Wash hair & shoulder & neck & back essential oil massage & hot stone & head mask)</h4>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <h3>Complete Care Package</h3>
+          <p>
+            Comprehensive treatment including facial, massage, cleansing, hand mask and steam conditioning.
+          </p>
+          <div class="price-wrapper">
+            <h4>70 min: $128 (Wash hair, facial, head, neck, shoulder, arm massage, facial cleansing, hand mask, steam with hair conditioner)</h4>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <h3>Head Spa Special</h3>
+          <p>
+            Specialized head spa treatment with massage, hand care, double shampoo and steam conditioning.
+          </p>
+          <div class="price-wrapper">
+            <h4>60 min: $125 (Head spa, head, neck, shoulder massage + hand care + hand mask, double shampoo, steam with hair conditioner)</h4>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <h3>Ultimate Relaxation Package</h3>
+          <p>
+            Our most comprehensive spa experience combining all treatments: facial, eye mask, full body massage, cleansing, mask and steam conditioning.
+          </p>
+          <div class="price-wrapper">
+            <h4>90 min: $160 (Wash hair, facial, eye mask, neck, shoulder, arm, back massage, facial cleansing, mask, steam with hair conditioner)</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="gallery-container">
+        <h2>Our Relaxing Environment</h2>
+        <h4>Take a virtual tour of our tranquil spa</h4>
+        <div class="loading-message">Gallery photos coming soon...</div>
+      </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials">
+      <h2>Special Offers</h2>
+      <h4>Limited time promotions for new and returning clients</h4>
+      <div class="services">
+        <div class="service-box">
+          <h3>New Client Special</h3>
+          <p>
+            First-time visitors enjoy 10% off any service over 60 minutes. Experience our premium treatments at an introductory rate.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h3>Weekly Wellness</h3>
+          <p>
+            Visit us every week and receive your 5th session at 20% off. Perfect for maintaining regular self-care routine.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h3>Couples Package</h3>
+          <p>
+            Book simultaneous appointments for two people and save 15% on both services. Relax together in our peaceful environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Visit Us Today</h2>
+      <div class="appointment-card">
+        <div class="appointment-map">
+          <h3>📍 Location & Hours</h3>
+          <div class="appointment-info">
+            <p><strong>Address:</strong> 327 W Howard St, Evanston, IL 60202</p>
+            <p><strong>Phone:</strong> <a href="tel:+1-312-478-2904">312-478-2904</a></p>
+            <p><strong>Hours:</strong> 9:00 AM - 1:00 AM Daily</p>
+            <p><strong>Walk-ins Welcome</strong> | Appointments Recommended</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Relax Spa. All rights reserved. | 327 W Howard St, Evanston, IL 60202 | 312-478-2904</p>
+    </footer>
+
+    <script>
+      // Booking Form Functions
+      function showBookingForm() {
+        const form = document.getElementById('bookingForm');
+        form.classList.add('active');
+        
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').min = today;
+      }
+
+      function hideBookingForm() {
+        const form = document.getElementById('bookingForm');
+        form.classList.remove('active');
+      }
+
+      function submitBooking(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData);
+        
+        // Simple validation
+        if (!data.firstName || !data.lastName || !data.phone || !data.people || !data.date || !data.time) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+        
+        // Show success message
+        alert('Thank you! Your appointment request has been submitted. We\'ll contact you within 30 minutes to confirm your booking at ' + data.phone + '.');
+        
+        // Reset form and hide
+        event.target.reset();
+        hideBookingForm();
+      }
+
+      // Service box hover effects
+      document.addEventListener('DOMContentLoaded', function() {
+        const serviceBoxes = document.querySelectorAll('.service-box');
+        
+        serviceBoxes.forEach(box => {
+          const priceWrapper = box.querySelector('.price-wrapper');
+          
+          box.addEventListener('mouseenter', () => {
+            priceWrapper.style.display = 'block';
+            setTimeout(() => {
+              priceWrapper.style.opacity = '1';
+            }, 10);
+          });
+          
+          box.addEventListener('mouseleave', () => {
+            priceWrapper.style.opacity = '0';
+            setTimeout(() => {
+              priceWrapper.style.display = 'none';
+            }, 300);
+          });
+          
+          // Touch support for mobile
+          box.addEventListener('touchstart', () => {
+            const isVisible = priceWrapper.style.display === 'block';
+            if (!isVisible) {
+              priceWrapper.style.display = 'block';
+              setTimeout(() => {
+                priceWrapper.style.opacity = '1';
+              }, 10);
+            }
+          });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+      });
+
+      // Close booking form when clicking outside
+      document.addEventListener('click', function(event) {
+        const form = document.getElementById('bookingForm');
+        const bookButton = document.querySelector('.book-button');
+        
+        if (form.classList.contains('active') && 
+            !form.contains(event.target) && 
+            !bookButton.contains(event.target)) {
+          hideBookingForm();
+        }
+      });
+    </script>
+  </body>
+</html>
